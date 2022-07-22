@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Viga&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lato", "Courier New", Courier, monospace;
   text-align: center;
   margin: 0 auto;
   background-image: url(../img/bg.jpg);
@@ -38,10 +40,10 @@ div.container {
   justify-content: space-evenly;
   align-items: center;
 }
-.col {
-  /* ... */
-}
 
+header {
+  font-family: "Viga", sans-serif;
+}
 header figure img {
   position: relative;
   border-radius: 100%;
@@ -66,7 +68,7 @@ header figure img:hover {
 }
 header figure figcaption {
   background-color: rgb(221, 121, 7);
-  width: 200px;
+  width: 150px;
   padding: 2px 0;
   margin: 4px auto;
   color: #fff;
@@ -109,7 +111,7 @@ article section.btn-link li {
 article section.btn-link li:hover {
   background-color: rgb(221, 121, 7);
   border: 2px solid rgb(198, 250, 253);
-  width: 415px;
+  width: 87%;
   color: #fff;
 }
 
