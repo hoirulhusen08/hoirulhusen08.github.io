@@ -22,16 +22,13 @@
         <!-- Header -->
         <header>
           <figure class="animate__animated animate__zoomIn">
-            <img src="assets/img/profile.png" alt="Image Profile" />
-            <span class="sayHello hint--bottom hint--medium" aria-label="Hi everyone, how are you? Could i help you?">Hi!</span>
-            <figcaption>I'm a Freelancer</figcaption>
+            <img src="assets/img/profile.png" alt="Image Profile" data-tilt data-tilt-glare data-tilt-max-glare="0.8" />
+            <span class="sayHello hint--bottom hint--medium" aria-label="Hi everyone, how are you? Could i help you?" data-tilt>Hi!</span>
+            <figcaption>I can, <span id="typed"></span></figcaption>
           </figure>
           <section>
             <h2 class="title animate__animated animate__fadeInDownBig">M. Khoirul Husen</h2>
-            <p class="animate__animated animate__bounceInUp">
-              <span class="hint--top hint--medium" aria-label="Tutorial, Tips & Tricks, Podcast | Youtube, My Blog">Content Creator</span> |
-              <span class="hint--top hint--medium" aria-label="HTML, CSS, Javascript | Bootstrap, React, Node.js">Web Developer</span>
-            </p>
+            <p class="animate__animated animate__bounceInUp">Content Creator | Web Developer</p>
           </section>
         </header>
 
@@ -42,21 +39,21 @@
           <section class="sosmed animate__animated animate__zoomIn">
             <div class="row">
               <div class="col">
-                <h3>Instagram</h3>
+                <h3><span class="hint--top hint--medium" aria-label="Sharing Knowledge, Daily Activity Content.">Instagram</span></h3>
                 <p>Foll : ...</p>
                 <a href="https://instagram.com/hoirulhusen08" target="_blank"
                   ><img src="assets/img/instagram.svg" alt="Instagram" title="Instagram" class="animate__animated animate__pulse animate__infinite"
                 /></a>
               </div>
               <div class="col">
-                <h3>YouTube</h3>
+                <h3><span class="hint--top hint--medium" aria-label="Video Tutorial, Tips & Tricks, Podcast, All About Web Developer.">YouTube</span></h3>
                 <p>Subs : ...</p>
                 <a href="https://www.youtube.com/channel/UCx7mN3JNbxoFuTzhfJxmDgQ" target="_blank"
                   ><img src="assets/img/youtube.svg" alt="YouTube" title="YouTube" class="animate__animated animate__pulse animate__infinite"
                 /></a>
               </div>
               <div class="col">
-                <h3>GitHub</h3>
+                <h3><span class="hint--top hint--medium" aria-label="Sharing Source Code, My Portfolio Code.">GitHub</span></h3>
                 <p>Repo : ...</p>
                 <a href="https://github.com/hoirulhusen08" target="_blank"
                   ><img src="assets/img/github.svg" alt="GitHub" title="GitHub" class="animate__animated animate__pulse animate__infinite"
@@ -88,6 +85,7 @@
             <a href="https://twitter.com/hoirulhusen08" target="_blank"
               ><img src="assets/img/twitter.svg" alt="Twitter" title="Twitter" class="animate__animated animate__pulse animate__infinite"
             /></a>
+            <a href="https://replit.com/@hoirulhusen08" target="_blank"><img src="assets/img/replit.svg" alt="Replit" title="Replit" class="animate__animated animate__pulse animate__infinite" /></a>
           </section>
         </footer>
       </div>
@@ -98,8 +96,27 @@
 
     <!-- particlesJS.load(@dom-id, @path-json, @callback (optional)); -->
     <script>
-      particlesJS.load("particles-js-body", "assets/js/particlesjs-config-bubble.json", function () {});
-      particlesJS.load("particles-js-content", "assets/js/particlesjs-config-default.json", function () {});
+      particlesJS.load("particles-js-body", "assets/js/particles-js/particlesjs-config-bubble.json", function () {});
+      particlesJS.load("particles-js-content", "assets/js/particles-js/particlesjs-config-default.json", function () {});
     </script>
+
+    <!-- Typed Js -->
+    <script src="assets/js/typed-js/typed.js@2.0.12"></script>
+
+    <!-- Typed Js -->
+    <script>
+      var typed3 = new Typed("#typed", {
+        strings: ["<i>Wordpress </i>", "<i>HTML </i>", "<i>Vanila CSS </i>", "<i>Bootstrap </i>", "<i>Javascript </i>", "<i>React.js </i>", "<i>Express.js </i>", "<i>PHP </i>", "<i>Laravel </i>"],
+        typeSpeed: 50,
+        backSpeed: 2,
+        startDelay: 1200,
+        backDelay: 1000,
+        smartBackspace: true, // this is a default
+        loop: true,
+      });
+    </script>
+
+    <!-- Tilt Js -->
+    <script src="assets/js/tilt-js/vanilla-tilt.min.js"></script>
   </body>
 </html>

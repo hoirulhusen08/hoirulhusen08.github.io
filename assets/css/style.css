@@ -39,7 +39,7 @@ div.container {
 
 .main-content {
   position: absolute;
-  top: 20px;
+  top: 22px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -78,7 +78,7 @@ header figure img:hover {
 }
 header figure figcaption {
   background-color: rgb(221, 121, 7);
-  width: 150px;
+  width: 180px;
   padding: 2px 0;
   margin: 4px auto;
   color: #fff;
