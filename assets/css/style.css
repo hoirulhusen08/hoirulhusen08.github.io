@@ -9,8 +9,6 @@
 body {
   font-family: "Lato", "Courier New", Courier, monospace;
   text-align: center;
-  overflow: hidden;
-  overflow: -moz-hidden-unscrollable;
   /* background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover; */
@@ -40,10 +38,11 @@ div.container {
 
 .main-content {
   position: absolute;
-  top: 22px;
+  top: 25px;
   bottom: 0;
-  left: 0;
+  left: 50%;
   right: 0;
+  margin-left: -250px;
 }
 
 .row {
